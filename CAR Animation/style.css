@@ -1,0 +1,94 @@
+*{
+    margin: 0;
+    box-sizing: border-box;
+}
+
+#general{
+    width: 100%;
+    height: 609px;
+    position: relative;
+    overflow: hidden;
+}
+
+#yol{
+    width: 100%;
+    height: 100%;
+    background-image: url('img/yol.jpg');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    position: absolute;
+}
+
+#logo{
+    width: 150px;
+    height: 150px;
+    background-image: url('img/logo.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+    position: absolute;
+    left: 50%;
+    top: -100px;
+    transform: translate(-50%, 0);
+    animation-name: logo;
+    animation-duration: 2s;
+    animation-delay: 2s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes logo {
+    from{
+        top: -100px;
+    }
+    to{
+        top: 100px;
+    }
+}
+
+#car1{
+    width: 450px;
+    height: 250px;
+    background-image: url('img/car1.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+    position: absolute;
+    bottom: -80px;
+    left: -400px;
+    animation-name: car1;
+    animation-duration: 2s;
+    z-index: 2;
+    animation-iteration-count: 3;
+}
+
+
+@keyframes car1 {
+    from{
+        left: -400px;
+    }
+    to{
+        left: 100%;
+    }
+}
+
+
+#car2{
+    width: 350px;
+    height: 150px;
+    background-image: url('img/car2.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+    position: absolute;
+    bottom: 70px;
+    right: -400px;
+    animation-name: car2;
+    animation-duration: 2s;
+    animation-iteration-count: 3;
+}
+
+@keyframes car2 {
+    from{
+        right: -400px;
+    }
+    to{
+        right: 100%;
+    }
+}
